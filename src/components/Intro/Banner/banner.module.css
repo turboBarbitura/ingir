@@ -1,0 +1,10 @@
+.logo h1 {
+    color: white;
+    text-transform: uppercase;
+    font-size: 70px;
+    margin: 0;
+}
+
+.logo p {
+    color: white;
+}
