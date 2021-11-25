@@ -6,12 +6,16 @@ import Navbar from "../Navbar/Navbar";
 const Intro = () => {
     return (
 
-      <div className={s.i}>
-          <Navbar/>
-
-          <Banner/>
-
-      </div>
+        <div className={s.i}>
+            <div className={s.itemsWrapper}>
+                <div className={s.navBar}>
+                    <Navbar/>
+                </div>
+                <div className={s.banner}>
+                    <Banner/>
+                </div>
+            </div>
+        </div>
 
 
     );
