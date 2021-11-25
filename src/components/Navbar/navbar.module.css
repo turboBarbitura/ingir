@@ -60,7 +60,14 @@
     font-size: 30px;
     align-self: center;
     text-decoration: none;
+    padding: 10px 5px;
+    border-radius: 10px;
 
+
+}
+
+.item:hover {
+    background-color: #745581;
 }
 
 .itemLogin {
@@ -68,6 +75,12 @@
     font-size: 30px;
     align-self: center;
     text-decoration: none;
+    padding: 5px 8px;
+    border-radius: 15px;
+}
+
+.itemLogin:hover {
+    background-color: #6a3b4f;
 }
 
 .itemSignup {
@@ -80,6 +93,8 @@
     border-radius: 15px;
     padding: 2px 7px;
     background: rgba(199, 122, 140, 0.6);
-    /*backdrop-filter: blur(5px);*/
+}
 
+.itemSignup:hover {
+    background-color: #6a3b4f;
 }

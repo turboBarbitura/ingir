@@ -1,0 +1,15 @@
+.startBuyBtn {
+    color: white;
+    font-size: 45px;
+    padding: 20px;
+    border-radius: 50px;
+    cursor: pointer;
+    border: none;
+    background: rgba(199, 122, 140, 0.5);
+
+    backdrop-filter: blur(5px);
+}
+
+.startBuyBtn:hover {
+    background-color: #745581;
+}

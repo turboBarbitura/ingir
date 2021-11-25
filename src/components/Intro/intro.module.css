@@ -11,10 +11,26 @@
 .itemsWrapper {
     display: flex;
     flex-direction: column;
+    height: 100%;
+}
+
+.itemsContent {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    justify-content: center;
 }
 
 .banner {
-    margin-top: 10em;
+
+
+    margin-left: 200px;
+
+
+}
+
+.startBuyBtn {
+    margin-top: 50px;
     margin-left: 200px;
 }
 
