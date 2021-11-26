@@ -1,8 +1,13 @@
-import React from 'react';
+import React, {useState} from 'react';
 import s from './navbar.module.css'
 import Logo from "../Logo/Logo";
 
-const Navbar = () => {
+
+
+const Navbar = (props) => {
+
+
+
     return (
         <div className={s.navBar}>
             <div className={s.navWrapper}>
@@ -17,12 +22,13 @@ const Navbar = () => {
                         <a href='#' className={s.item}>MENU4</a>
                     </div>
                     <div className={s.itemsLogin}>
-                        <a href="#" className={s.itemLogin}>Log In</a>
+                        <button className={s.itemLogin} onClick={props.onModalOpen}>Log In</button>
                         <a href="#" className={s.itemSignup}>Sign Up</a>
                     </div>
 
                 </div>
             </div>
+
 
         </div>
     );

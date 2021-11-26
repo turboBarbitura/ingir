@@ -1,0 +1,31 @@
+.userLogin {
+    align-self: center;
+
+}
+
+.userPass {
+    align-self: center;
+}
+
+.signinWrapper {
+    margin: 40px;
+
+
+}
+
+.signinForm {
+    display: flex;
+    flex-direction: column;
+
+}
+
+.loginBtn {
+    font-size: 35px;
+    background-color: #745581;
+    border: none;
+    padding: 20px;
+    border-radius: 25px;
+    cursor: pointer;
+    align-self: center;
+    margin-top: 55px;
+}

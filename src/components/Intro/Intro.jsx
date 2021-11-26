@@ -4,13 +4,15 @@ import Banner from "./Banner/Banner";
 import Navbar from "../Navbar/Navbar";
 import Startbuybtn from "../Buttons/StartBuy/Startbuybtn";
 
-const Intro = () => {
+
+const Intro = (props) => {
+
     return (
 
         <div className={s.i}>
             <div className={s.itemsWrapper}>
                 <div className={s.navBar}>
-                    <Navbar/>
+                    <Navbar onModalOpen = {props.onModalOpen}/>
                 </div>
                 <div className={s.itemsContent}>
                     <div className={s.banner}>
