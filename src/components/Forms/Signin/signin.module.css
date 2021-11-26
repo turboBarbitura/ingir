@@ -8,7 +8,7 @@
 }
 
 .signinWrapper {
-    margin: 40px;
+   margin-top: 40px;
 
 
 }
@@ -20,12 +20,47 @@
 }
 
 .loginBtn {
-    font-size: 35px;
+    font-size: 25px;
     background-color: #745581;
     border: none;
-    padding: 20px;
+    padding: 10px;
+    width: 100%;
     border-radius: 25px;
     cursor: pointer;
     align-self: center;
-    margin-top: 55px;
+    margin-top: 10px;
+    color: whitesmoke;
+}
+
+input {
+    width: 250px;
+    height: 40px;
+    margin-bottom: 10px;
+    border: none;
+    border-bottom: 2px solid black;
+    background-color: transparent;
+    color: white;
+    font-size: 20px;
+
+
+}
+
+
+input::-webkit-input-placeholder { /* WebKit browsers */
+    color: whitesmoke;
+}
+
+hr {
+    margin: 30px;
+}
+
+.notReg {
+    text-align: center;
+    cursor: pointer;
+}
+
+.forgotPass {
+    align-self: center;
+    margin-top: 20px;
+    cursor: pointer;
 }

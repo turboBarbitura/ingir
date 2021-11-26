@@ -22,8 +22,8 @@
 }
 
 .modalBody {
-    height: 400px;
-    width: 600px;
+    height: 550px;
+    width: 400px;
     margin: auto;
     background-color: #C77A8C7F;
     border-radius: 25px;
@@ -43,12 +43,18 @@
 }
 
 .modalBody h2 {
-    text-align: center;
+    text-align: left;
     color: white;
     font-size: 35px;
     margin-bottom: 15px;
     margin-top: -10px;
     width: 100%;
+}
+
+.modalBody p {
+    color: white;
+    margin-bottom: 15px;
+    font-size: 20px;
 }
 
 .modalClose {

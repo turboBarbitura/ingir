@@ -1,5 +1,5 @@
 import React from 'react';
-import s from './Modal.module.css'
+import s from './modal.module.css'
 
 const Modal = (props) => {
     return (
@@ -7,7 +7,8 @@ const Modal = (props) => {
             <div className={s.modalBody}>
                 <div className={s.modalClose} onClick={props.onModalClose}>×</div>
                 <h2>{props.title}</h2>
-                <hr/>
+                <p>{props.desc}</p>
+                {/*<hr/>*/}
                 {props.children}
             </div>
         </div>
