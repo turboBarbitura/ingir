@@ -30,6 +30,8 @@
     align-self: center;
     margin-top: 10px;
     color: whitesmoke;
+    text-decoration: none;
+    text-align: center;
 }
 
 input {
@@ -63,22 +65,5 @@ hr {
     align-self: center;
     margin-top: 20px;
     cursor: pointer;
-}
-.userPassI {
-    width: 300px;
 
-}
-
-.textFieldPass {
-    color: whitesmoke !important;
-
-}
-
-.userLoginI {
-    width: 300px;
-
-}
-
-.textFieldLogin {
-    color: whitesmoke !important;
 }

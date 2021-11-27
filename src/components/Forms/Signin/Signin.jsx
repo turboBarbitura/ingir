@@ -1,30 +1,27 @@
 import React from 'react';
 import s from './signin.module.css'
-import {TextField} from "@mui/material";
+import {NavLink} from "react-router-dom";
 
 
 
-const Signin = () => {
+
+const Signin = (props) => {
     return (
         <div className={s.signinWrapper}>
             <form className={s.signinForm} action="#">
                 <div className={s.userLogin}>
-                    {/*<input type="text" placeholder='Логин / E-mail'/>*/}
-                    <TextField className={s.userLoginI} id="standard-basic-l" label="Логин / E-mail" variant="standard"
-                               InputLabelProps={{className: s.textFieldLogin}}
-                    />
+                   <input type="text" placeholder='Логин / E-mail'/>
+
 
 
                 </div>
                 <div className={s.userPass}>
-                    {/*<input type="password" placeholder='Пароль'/>*/}
-                    <TextField className={s.userPassI} id="standard-basic-p" label="Пароль" variant="standard"
-                        InputLabelProps={{className: s.textFieldPass}}
-                    />
+                    <input type="password" placeholder='Пароль'/>
+
 
                 </div>
                 <p className={s.forgotPass}>Забыли пароль?</p>
-                <button className={s.loginBtn}>Войти</button>
+                <NavLink to='/personal'  className={s.loginBtn} onClick={props.onModalClose}>Войти</NavLink>
 
                 <hr/>
 
