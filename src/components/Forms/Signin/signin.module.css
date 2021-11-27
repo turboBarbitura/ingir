@@ -8,7 +8,7 @@
 }
 
 .signinWrapper {
-   margin-top: 40px;
+   margin-top: 20px;
 
 
 }
@@ -63,4 +63,22 @@ hr {
     align-self: center;
     margin-top: 20px;
     cursor: pointer;
+}
+.userPassI {
+    width: 300px;
+
+}
+
+.textFieldPass {
+    color: whitesmoke !important;
+
+}
+
+.userLoginI {
+    width: 300px;
+
+}
+
+.textFieldLogin {
+    color: whitesmoke !important;
 }
