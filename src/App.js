@@ -6,6 +6,7 @@ import Modal from "./components/Windows/Modal/Modal";
 import Signin from "./components/Forms/Signin/Signin";
 import Personalarea from "./components/PersonalArea/Personalarea";
 import {BrowserRouter, Route, Routes} from "react-router-dom";
+import Navbar from "./components/Navbar/Navbar";
 
 function App() {
     const [modal, setModal] = useState(false)
@@ -13,11 +14,13 @@ function App() {
   return (
       <BrowserRouter>
 
+
+
           <Routes>
 
             <Route path='/' element = {<Intro onModalOpen={()=>setModal(true)}/>} />
 
-            <Route path='/personal' element = { <Personalarea/> } />
+            <Route path='personal' element = { <Personalarea/> } />
 
           </Routes>
 

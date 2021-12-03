@@ -1,15 +1,16 @@
-import React, {useState} from 'react';
+import React from 'react';
 import s from './navbar.module.css'
 import Logo from "../Logo/Logo";
-import {NavLink} from "react-router-dom";
-
+import Navsignup from "./NavSignUp/Navsignup";
+import {BrowserRouter, Outlet, Route, Routes} from "react-router-dom";
+import Profilebar from "./ProfileBar/Profilebar";
 
 
 const Navbar = (props) => {
 
 
-
     return (
+
         <div className={s.navBar}>
             <div className={s.navWrapper}>
                 <div className={s.navLogo}>
@@ -22,16 +23,18 @@ const Navbar = (props) => {
                         <a href='#' className={s.item}>MENU3</a>
                         <a href='#' className={s.item}>MENU4</a>
                     </div>
-                    <div className={s.itemsLogin}>
-                        <button className={s.itemLogin} onClick={props.onModalOpen}>Log In</button>
-                        <a href="#" className={s.itemSignup}>Sign Up</a>
-                    </div>
+
+                        <Outlet/>
+
+                        {/*<Navsignup onModalOpen={props.onModalOpen}/>*/}
+
 
                 </div>
             </div>
 
 
         </div>
+
     );
 };
 

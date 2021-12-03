@@ -1,11 +1,19 @@
 import React from 'react';
 import Navbar from "../Navbar/Navbar";
 import s from './personalarea.module.css'
+import {Route, Routes} from "react-router-dom";
+import Navsignup from "../Navbar/NavSignUp/Navsignup";
+import Profilebar from "../Navbar/ProfileBar/Profilebar";
+
 
 const Personalarea = () => {
     return (
         <div className={s.pa}>
-            <Navbar/>
+            <Routes>
+                <Route path='/' element = {<Navbar/>}>
+                    <Route  index element = {<Profilebar/>}/>
+                </Route>
+            </Routes>
             <div className={s.paWrapper}>
                 <h1 className={s.paTitle}>Личный кабинет </h1>
                 <div className={s.contentWrapper}>
